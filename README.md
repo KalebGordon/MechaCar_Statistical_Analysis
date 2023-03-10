@@ -38,8 +38,37 @@ For the individual lots, Lot 1 and 2 are under 100 PSI variance, however Lot 3 s
 <img src='lot_summary.JPG'>
 </div>
 
-
-
 ## T-Tests on Suspension Coils
+We performed T-Tests to determine if the average PSI per lot was statistically similar to the average population PSI of 1500. Lots 1 and 2 had  a p-value of less than 1 but greater than 0.1. This p-value rejects the null-hypothesis that suggests there is no statistical similarity between the Lot PSI and the population PSI. Thus, our average PSI is statistically similar to the population's average PSI of 1500 pounds per square inch. However, Lot 3 had a p-value of 0.04168, which supports the null hypothesis, meaning there is a statistical difference between the tested mean of 1496.14 versus the population mean of 1500.
+
+P-Value of 1 for a tested mean of 1500PSI. Statistically similar.
+<div align='center'>
+<img src='t.test_lot1.JPG'>
+</div>
+
+P-Value of 0.6072 for a tested mean of 1500.02. Statistically similar.
+<div align='center'>
+<img src='t.test_lot2.JPG'>
+</div>
+
+P-Value of 0.04168 for a tested mean of 1496.14. Statistically different.
+<div align='center'>
+<img src='t.test_lot3.JPG'>
+</div>
 
 ## Study Design: MechaCar vs Competition
+
+
+In your README, create a subheading ## Study Design: MechaCar vs Competition.
+
+Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
+
+In your description, address the following questions:
+
+What metric or metrics are you going to test?
+
+What is the null hypothesis or alternative hypothesis?
+
+What statistical test would you use to test the hypothesis? And why?
+
+What data is needed to run the statistical test?
