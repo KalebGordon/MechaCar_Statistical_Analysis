@@ -24,6 +24,19 @@ For the variables that have a non-random variance to mpg, this regression would 
 </div>
 
 ## Summary Statistics on Suspension Coils
+We created some summary statistics for MechaCar's Suspension Coils. This dataframe compared different manufacturing lots, vehicle id's, and their PSIs. 
+
+MechaCar's design specifications state that the suspension coil's variance must not exceed 100 PSI. The current manufacturing data does meet design specifications for all lots, however Lot 3 does not meet specifications when measuring each individual lot. 
+
+For all lots, the suspension coil PSI variance is 62.29 PSI.
+<div align='center'>
+<img src='total_summary.JPG'>
+</div>
+
+For the individual lots, Lot 1 and 2 are under 100 PSI variance, however Lot 3 sits at 170.28 PSI variance.
+<div align='center'>
+<img src='lot_summary.JPG'>
+</div>
 
 
 
