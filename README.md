@@ -57,18 +57,11 @@ P-Value of 0.04168 for a tested mean of 1496.14. Statistically different.
 </div>
 
 ## Study Design: MechaCar vs Competition
+In order to better assess MechaCar's product, we can create a short statistical study that compares MechaCar's products to competition. In this statistical study, we will compare MechaCar's cost to our competitiion's cost. We can compare each MechaCar vehicle to the average cost of vehicles of that type in the population. 
+
+Our hypothesis is that MechaCar's vehicles are cheaper than the vehicles in the population. Our null hypothesis is that there is no statistical difference between MechaCar's vehicle cost and other vehicles of that type. An alternative hypothesis is that MechaCar's cost is higher than the population.
+
+We would perform a t-test to determine the similarity between MechaCars and the population. 
 
 
-In your README, create a subheading ## Study Design: MechaCar vs Competition.
-
-Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
-
-In your description, address the following questions:
-
-What metric or metrics are you going to test?
-
-What is the null hypothesis or alternative hypothesis?
-
-What statistical test would you use to test the hypothesis? And why?
-
-What data is needed to run the statistical test?
+For this study, we would need to have a dataframe that lists the vehicle type and cost of that vehicle for each Mechacar vehicle. We would then compare the average price of MechaCar vehicles to a dataset of the average cost of each vehicle type for the population.
