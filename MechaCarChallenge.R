@@ -21,7 +21,8 @@ Suspension_Coil <- read.csv(file="Suspension_Coil.csv")
 library(tidyverse)
 
 #Creating a summary table for Suspension_Coil.
-summarize_suspension_coil <- Suspension_Coil %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI), Median=median(PSI), Variance = var(PSI), SD = sd(PSI), .groups = 'keep') #create summary table with multiple columns
+total_summary <- Suspension_Coil %>% summarize(Mean=mean(PSI), Median=median(PSI), Variance = var(PSI), SD = sd(PSI), .groups = 'keep') #create summary table with multiple columns
+lot_summary <- Suspension_Coil %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI), Median=median(PSI), Variance = var(PSI), SD = sd(PSI), .groups = 'keep') #create summary table with multiple columns
 
 #Deliverable 3
 #Creating a t-test for the means of suspension_coil PSI. 
