@@ -26,7 +26,15 @@ lot_summary <- Suspension_Coil %>% group_by(Manufacturing_Lot) %>% summarize(Mea
 
 #Deliverable 3
 #Creating a t-test for the means of suspension_coil PSI. 
-t.test((summarize_suspension_coil$Mean), mu=(1500))
+t.test((lot_summary$Mean), mu=(1500))
+
+Lot1 <- Suspension_Coil[Suspension_Coil$Manufacturing_Lot == 'Lot1',]
+Lot2 <- Suspension_Coil[Suspension_Coil$Manufacturing_Lot == 'Lot2',]
+Lot3 <- Suspension_Coil[Suspension_Coil$Manufacturing_Lot == 'Lot3',]
+
+t.test((Lot1$PSI), mu =(1500))
+t.test((Lot2$PSI), mu =(1500))
+t.test((Lot3$PSI), mu =(1500))
 
 # Assuming a significance level of .05 percent, our p-value is above our significance level at .4533 percent.
 # The two means are statistically similar. 
